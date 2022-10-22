@@ -1,0 +1,12 @@
+@use "./../../assets/partials/palette";
+
+.Footer {
+    background-color: palette.$darker-colour;
+    color: palette.$near-white;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}

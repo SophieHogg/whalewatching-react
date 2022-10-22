@@ -1,0 +1,27 @@
+@use "./../../assets/partials/palette";
+@import url("https://fonts.googleapis.com/css2?family=Combo&display=swap");
+
+.Movies {
+    background-color: palette.$primary-colour;
+    min-height: 80vh;
+    padding: 0;
+    margin: 0;
+    &__Title {
+        margin: 0;
+        padding-top: 3vh;
+        padding-bottom: 1vh;
+        font-family: "Combo", cursive;
+        font-size: 40px;
+        color: palette.$near-white;
+    }
+    &__MovieCollection {
+        display: flex;
+        justify-content: center;
+        &__Grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            width: 80vw;
+        }
+    }
+}

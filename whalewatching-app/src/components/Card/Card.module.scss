@@ -1,0 +1,23 @@
+@use "./../../assets/partials/palette";
+
+.Card {
+    background-color: palette.$button-colour;
+    border-radius: 50px;
+    margin: 10px;
+    color: palette.$font-colour-light;
+    border: 3px solid palette.$button-outline-colour;
+    &__Title {
+        font-size: 22px;
+        &__Header {
+            color: palette.$near-white;
+        }
+    }
+    &:hover {
+        background-color: palette.$button-hover-colour;
+        cursor: pointer;
+    }
+    &:active {
+        background-color: palette.$button-click-colour;
+        cursor: grab;
+    }
+}

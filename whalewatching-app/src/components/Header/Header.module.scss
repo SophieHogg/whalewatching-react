@@ -1,0 +1,22 @@
+@use "./../../assets/partials/palette";
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+
+.Header {
+    background-color: palette.$secondary-colour;
+    height: 15vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: palette.$font-colour;
+    &__Title {
+        margin: 0;
+        color: palette.$near-white;
+        font-family: "Caveat", cursive;
+        font-size: 60px;
+    }
+    &__Subtitle {
+        font-family: "Caveat", cursive;
+        font-size: 30px;
+    }
+}
